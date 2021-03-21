@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MusicPlayer.MusicPlayerActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+    <TextView
+        android:id="@+id/tvJudul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:text="Judul Lagu"
+        android:textColor="@color/borderColor"
+        android:layout_marginBottom="20dp"/>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/mlogo1"
+        app:tint="@color/borderColor"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="@string/cdec"/>
+
+    <SeekBar
+        android:id="@+id/seekBarPosition"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:progress="50"
+        android:layout_marginVertical="12dp"
+        android:progressTint="@color/borderColor"
+        android:thumbTint="@color/borderColor"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/elapsedTimeView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.10"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/remainingTimeView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.10"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginLeft="240dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+        <Button
+            android:id="@+id/btnPrev"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/ic_baseline_skip_previous_24"
+            android:onClick="btnPrevAction"/>
+
+        <Button
+            android:id="@+id/btnPlay"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/ic_baseline_play_arrow_24"
+            android:onClick="btnPlayAction"/>
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/ic_baseline_skip_next_24"
+            android:onClick="btnNextAction"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_baseline_volume_down_24"/>
+
+        <SeekBar
+            android:id="@+id/volumeBar"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:progress="50"
+            android:max="100"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_baseline_volume_up_24"/>
+
+    </LinearLayout>
+
+</LinearLayout>

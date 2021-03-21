@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="id.ac.umn.projectuts">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProjectUTS">
+        <activity android:name=".ProfileActivity" android:label="Profile"/>
+        <activity android:name=".MusicPlayer.MusicPlayerListActivity" android:label="Music List" />
+        <activity android:name=".MusicPlayer.MusicPlayerActivity" android:label="Music Player" />
+        <activity android:name=".Login_Activity" android:label="Log In"/>
+        <activity android:name=".MainActivity" android:label="Music Player App">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ProjectUTS</string>
+    <string name="username">Username</string>
+    <string name="pass">Password</string>
+    <string name="login">Log In</string>
+    <string name="profile">Profile</string>
+    <string name="cdec">Logo Music Player</string>
+    <string name="musicPlayer">Music Player</string>
+    <string name="logMusicPlayer">Log in to Music Player</string>
+</resources>
